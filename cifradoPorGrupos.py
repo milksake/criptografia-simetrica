@@ -20,13 +20,6 @@ def descifrarPorGrupos(message, key):
 
 
 if __name__ == "__main__":
-    keyList = []
-    for i in range(4):
-        for j in range(4):
-            for k in range(4):
-                for l in range(4):
-                    if i != j and i != k and i != l and j != k and j != l and k != l:
-                        keyList.append(str(i) + str(j) + str(k) + str(l))
-    for key in keyList:
-        x = cifrarPorGrupos("HOLAMUNDO", key)
-        print(x, descifrarPorGrupos(x, key))
+    key = "201"
+    x = cifrarPorGrupos("HOLAMUNDO", key)
+    print(x, descifrarPorGrupos(x, key))

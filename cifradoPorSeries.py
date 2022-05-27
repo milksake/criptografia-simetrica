@@ -31,5 +31,5 @@ def descifrarPorSeries(cifrado):
 
 
 if __name__ == "__main__":
-    x = cifrarPorSeries("ELEMENTARYMYDEARWATSON")
+    x = cifrarPorSeries("HOLAMUNDO")
     print(x, descifrarPorSeries(x))
